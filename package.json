@@ -7,7 +7,7 @@
     
      "start": "node backend/server.js",
     "server": "nodemon backend/server.js",
-    "build":"echo success"
+    "build":"npm install --legacy-peer-deps && npm install --legacy-peer-deps --prefix frontend && npm run build --prefix frontend"
   },
   "author": "aayusharma",
   "license": "ISC",
